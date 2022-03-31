@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let total = 0;
+    let i = 2;
+    let j = 4;
+    let temp;
+
+    while(true){
+        total = i+j;
+
+        if(total % 5 === 0){
+            alert('So dau tien trong day chia het cho 5 la: ' + total);
+            break;
+        }else {
+            i = j;
+            j = total;
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="a()">Chơi</button>
+<script>
+    function a(){
+        let input1 = +prompt("Nhap khoang so muon doan: ");
+        let count = 0;
+        let a = Math.round(Math.random()*input1)
+        do{
+            let input2 = +prompt("Nhap gia tri muon doan: ");
+            if(input2 === input1){
+                alert('Chuc mung ban');
+                break;
+            }else if(input2 < input1){
+                alert('be thua');
+            }else alert('lon hon')
+            count ++;
+        }while(count != 3);
+        if(count == 3){
+            alert('choi lai de');
+        }
+    }
+</script>
+</body>
+</html>
